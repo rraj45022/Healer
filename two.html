@@ -47,9 +47,23 @@
         .stats {
             padding: 30px;
         }
+
+        .dark-mode {
+        background-color: black;
+        color: red;
+        }
+        .color{
+            color: darkred;
+        }
+
     </style>
 
-
+    <script>
+      function darkMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+  </script>
 </head>
 
 <body >
@@ -58,9 +72,10 @@
         <div class="container py-4">
             <header class="pb-3 mb-4 border-bottom">
                 <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-                    <i class="fa-thin fa-mask-face"></i> <span class="fs-1"><strong>Current Update</strong></span>
+                    <i class="fa-thin fa-mask-face"></i> <span class="fs-1 color"><strong>Current Update</strong></span>
                 </a>
-
+                <div align="right">
+                <button type="button" class="btn btn-dark" onclick="darkMode()">🌒</button></div>
             </header>
 
             <div class="p-5 mb-4 bg-light rounded-3">
@@ -83,7 +98,7 @@
             </div>
             <header class="pb-3 mb-4 border-bottom">
                 <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-                    <i class="fa-thin fa-mask-face"></i> <span class="fs-1"><strong>Country Update</strong></span>
+                    <i class="fa-thin fa-mask-face"></i> <span class="fs-1 color"><strong>Country Update</strong></span>
                 </a>
 
             </header>
