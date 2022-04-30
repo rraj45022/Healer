@@ -25,33 +25,60 @@
             border-radius: 10px;
      }
 
-    a {
-      text-decoration: none;
+    .bg1{
+      background-color: lightgrey;
     }
+    .bg2{
+      background-color: lightcyan;
+    }
+    body {
+        padding: 25px;
+        background-color: white;
+        color: black;
+        font-size: 20xpx;
+      }
+      .a{
+        font-size: 30px;
+      }
+      .dark-mode {
+        background-color: black;
+        color: red;
+
+      }
+      .size{
+        font-size: 30px;
+      }
   </style>
+  <script>
+      function darkMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+  </script>
 </head>
 
 <body>
-  <header class="text-gray-600 body-font nav">
+  <header class="text-gray-600 body-font nav bg1">
     <div class="container mx-auto flex flex-wrap  flex-col md:flex-row items-center">
       <img src="Blue & Red Two Hearts Logo.png" height="15%" width="15%" alt="Healer">
 
       <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-        <a class="mr-5 hover:text-gray-900" href="#covid">COVID-19</a>
-        <a class="mr-5 hover:text-gray-900" href="#covid">Vaccination</a>
-        <a class="mr-5 hover:text-gray-900" href="#questions">Frequent question</a>
-        <a class="mr-5 hover:text-gray-900" href="#aboutus">About Us</a>
+        <a class="mr-5 hover:text-gray-900 a" href="#covid">COVID-19</a>
+        <a class="mr-5 hover:text-gray-900 a" href="#covid">Vaccination</a>
+        <a class="mr-5 hover:text-gray-900 a" href="#questions">Frequent question</a>
+        <a class="mr-5 hover:text-gray-900 a" href="#aboutus">About Us</a>
       </nav>
+      <button type="button" class="btn btn-dark" onclick="darkMode()">🌒</button>
     </div>
   </header>
   
 <!--  This was a group project  -->
   <!-- main body -->
-  <section class="text-gray-600 body-font">
+  <section class="text-gray-600 body-font ">
     <div class="container px-5 py-24 mx-auto">
       <div class="text-center mb-20">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">What is Healer</h1>
-        <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">At healer, you will get everything
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-red-900 mb-4">What is Healer :</h1>
+        <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s size">At healer, you will get everything
           one needs to know about COVID-19, from
           Latest News, Stats, Vaccine Slots, Avilability and in case if you are weak feel mentally
           we are here with our perfect articles, books and playlists for you.</p>
@@ -69,8 +96,8 @@
             </svg>
           </div>
           <div class="flex-grow">
-            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">COVID- 19</h2>
-            <p class="leading-relaxed text-base">STATS <br> LATEST UPDATES <br> PRECAUTIONS</p>
+            <h2 class="text-red-900 text-lg title-font font-medium mb-3 size">COVID- 19</h2>
+            <p class="leading-relaxed text-base ">STATS <br> LATEST UPDATES <br> PRECAUTIONS</p>
             <a class="mt-3 text-indigo-500 inline-flex items-center" href="two.html" target="blank">Know More
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -90,7 +117,7 @@
             </svg>
           </div>
           <div class="flex-grow">
-            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Vaccination</h2>
+            <h2 class="text-red-900 text-lg title-font font-medium mb-3 size">Vaccination</h2>
             <p class="leading-relaxed text-base">IMPORTANCE <br> AVILABILITY <br> PRECAUTION</p>
             <a class="mt-3 text-indigo-500 inline-flex items-center" href="Vaccination.html" target="blank">Get
               Vaccinated
