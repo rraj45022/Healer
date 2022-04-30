@@ -5,12 +5,34 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>\
+  <title>Document</title>
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <style type="text/css">
+    .dark-mode {
+        background-color: black;
+        color: red;
+        }
+    .color{
+        color: darkred;
+        }
+    .button{
+      padding: 10px 10px 10px 10px;
+      background-color: lightgray;
+    }
+  </style>
+  <script>
+      function darkMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+  </script>
 </head>
 
 <body>
-  <h1 style="text-align: center;">Check your Vaccine Availability</h1>
+  <div align="right">
+    <button type="button" class="btn btn-dark button" onclick="darkMode()">🌒</button></div>
+  
+  <h1 style="text-align: center; font-size: 30px;">Check your Vaccine Availability</h1>
   <a style="text-align: center;" href="https://www.cowin.gov.in/" target="_blank"
     class="text-indigo-500 inline-flex items-center mt-4"><b> Cowin Vaccination Registration</b>
     <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
@@ -24,7 +46,7 @@
       <div class="-my-8 divide-y-2 divide-gray-100">
         <div class="py-8 flex flex-wrap md:flex-nowrap">
           <div class="md:flex-grow">
-            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Importance of Vaccination:</h2>
+            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2 color">Importance of Vaccination:</h2>
             <p class="leading-relaxed">Although experts are still learning a lot about the COVID-19 vaccines, there are
               some clear benefits to getting vaccinated.<br></p>
 
@@ -58,7 +80,7 @@
         </div>
         <div class="py-8 flex flex-wrap md:flex-nowrap">
           <div class="md:flex-grow">
-            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Availability of Vaccines:</h2>
+            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2 color">Availability of Vaccines:</h2>
             <p class="leading-relaxed"><b>Vaccines available around the worldwide:</b><br>
               <b>•COVAXIN</b><br>
               It is recommended that the 2nd dose of COVAXIN should be administered in the interval of 4 to 6 weeks from
@@ -97,7 +119,7 @@
         </div>
         <div class="py-8 flex flex-wrap md:flex-nowrap">
           <div class="md:flex-grow">
-            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2"> Precaution or Advisory Guidlines </h2>
+            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2 color"> Precaution or Advisory Guidlines </h2>
             <p class="leading-relaxed">What you need to know before, during and after receiving a COVID-19 vaccine<br>
               <b>Before you go:</b><br>
               Do your research. There’s a lot of misinformation about vaccines online, so it’s important to always get
